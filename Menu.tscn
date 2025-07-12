@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://co7soomsngyk"]
+
+[ext_resource type="Script" uid="uid://chy4bo42mevuf" path="res://Scripts/levels.gd" id="1_uubjt"]
+[ext_resource type="Script" uid="uid://ba0juqqbtlh1h" path="res://Scripts/quit.gd" id="2_5yleq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Levels" type="Button" parent="."]
+layout_mode = 0
+offset_left = 806.0
+offset_top = 468.0
+offset_right = 1114.0
+offset_bottom = 613.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+text = "Levels"
+script = ExtResource("1_uubjt")
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 806.0
+offset_top = 812.0
+offset_right = 1114.0
+offset_bottom = 957.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+text = "Quit "
+script = ExtResource("2_5yleq")
+
+[connection signal="pressed" from="Levels" to="Levels" method="_on_pressed"]
+[connection signal="pressed" from="Quit" to="Quit" method="_on_pressed"]

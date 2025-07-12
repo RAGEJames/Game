@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://clwlp45mva5ih"]
+
+[ext_resource type="Script" uid="uid://3dnp2fbcl0gm" path="res://Levels/1.gd" id="1_wuah3"]
+[ext_resource type="Script" uid="uid://1rq6manq83ch" path="res://Scripts/Home.gd" id="2_g0l76"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="1" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 960.0
+offset_top = 540.0
+offset_right = 1000.0
+offset_bottom = 580.0
+script = ExtResource("1_wuah3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="1"]
+z_index = 1
+layout_mode = 0
+offset_left = -154.0
+offset_top = -77.0
+offset_right = 154.0
+offset_bottom = 68.0
+theme_override_font_sizes/normal_font_size = 100
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="1"]
+layout_mode = 0
+offset_left = -77.0
+offset_top = -77.0
+offset_right = 231.0
+offset_bottom = 68.0
+scale = Vector2(0.5, 1)
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="back" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 960.0
+offset_top = 540.0
+offset_right = 1000.0
+offset_bottom = 580.0
+script = ExtResource("2_g0l76")
+
+[node name="Button" type="Button" parent="back"]
+layout_mode = 0
+offset_left = -920.0
+offset_top = -500.0
+offset_right = -612.0
+offset_bottom = -355.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+text = "Back"
+
+[connection signal="pressed" from="1/Button" to="1" method="_on_button_pressed"]
+[connection signal="pressed" from="back/Button" to="back" method="_on_button_pressed"]
