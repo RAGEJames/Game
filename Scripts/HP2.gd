@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 		get_tree().reload_current_scene()
 	THealth = Health * 0.1 * 0.1 / Health_mult
 	
-	get_parent().get_parent().get_parent().get_node("GUI/Base/HP1").scale = Vector2(THealth, 1)
+	get_parent().get_parent().get_parent().get_node("GUI/Base/HP2").scale = Vector2(THealth, 1)
 func dmg1() -> void:
 	Health -= 1
 func dmg2() -> void:
