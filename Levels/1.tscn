@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://ohtuhptramoj"]
+[gd_scene load_steps=20 format=4 uid="uid://ohtuhptramoj"]
 
 [ext_resource type="Script" uid="uid://dvy8gmugxqj66" path="res://Scripts/player.gd" id="1_a3mg4"]
 [ext_resource type="Script" uid="uid://3nfebcqlm6tf" path="res://Scripts/Gravity.gd" id="3_ghh0o"]
@@ -7,7 +7,6 @@
 [ext_resource type="Script" uid="uid://6xy7s58dspl5" path="res://Scripts/changeplayer.gd" id="5_wj6md"]
 [ext_resource type="Script" uid="uid://c2rylpaa7monf" path="res://Scripts/gui.gd" id="6_xu7n4"]
 [ext_resource type="Texture2D" uid="uid://bo38nsl3gcb7g" path="res://PNG/Bar.png" id="7_pytih"]
-[ext_resource type="Script" uid="uid://dala8m6ws5d4h" path="res://Scripts/HP2.gd" id="7_wj6md"]
 [ext_resource type="Texture2D" uid="uid://bxoyffa01ixy0" path="res://PNG/Yellow.png" id="8_pm05x"]
 [ext_resource type="Texture2D" uid="uid://uky7d8wdaeo" path="res://PNG/Red.png" id="9_7gyb1"]
 [ext_resource type="Texture2D" uid="uid://bvqs2py766vvj" path="res://PNG/Green.png" id="10_xuljb"]
@@ -243,7 +242,6 @@ shape = SubResource("RectangleShape2D_a3mg4")
 script = ExtResource("3_ghh0o")
 
 [node name="Health" type="CharacterBody2D" parent="W2/PLAYER"]
-script = ExtResource("7_wj6md")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="W2"]
 scale = Vector2(4, 4)
