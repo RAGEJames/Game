@@ -1,4 +1,4 @@
 git add .
 git commit -m "autocommit"
 git push origin main
-pkill --self
+kitty @ close-window --self
