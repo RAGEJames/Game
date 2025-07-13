@@ -1,1 +1,1 @@
-inotifywait -re create,delete,moved_from . && sh autopush.sh && sh push.sh
+inotifywait -m -re create,delete,moved_from . && sh push.sh
