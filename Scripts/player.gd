@@ -30,11 +30,11 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY - JUMP_REDUCE
 		JUMP_REDUCE = JUMP_REDUCE - 120.0
-		get_node("/root/World/W1/PLAYER/Health").dmg50()
+		get_node("/root/World/W2/PLAYER/Health").dmg50()
 	if Input.is_action_pressed("W") and is_on_floor():
 		velocity.y = JUMP_VELOCITY - JUMP_REDUCE
 		JUMP_REDUCE = JUMP_REDUCE - 120.0 
-		get_node("/root/World/W1/PLAYER/Health").hp50()
+		get_node("/root/World/W2/PLAYER/Health").hp50()
 	if Input.is_action_pressed("ui_up") and is_on_floor():
 		velocity.y = JUMP_VELOCITY - JUMP_REDUCE
 		JUMP_REDUCE = JUMP_REDUCE - 120.0
