@@ -1,3 +1,3 @@
 git pull --rebase origin main
-sleep 5
-sh pull.sh
+sleep 10
+sh autopull.sh
