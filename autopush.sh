@@ -1,1 +1,1 @@
-inotifywait . && sh push.sh
+inotifywait -e create,moved_from . && sh push.sh
