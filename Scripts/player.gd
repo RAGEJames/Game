@@ -7,11 +7,12 @@ var STAMINA = 200
 var FAKESTAMINA = 2
 var DISPLAYSTAMINA = 1
 var IDLE = 1
+
 func reload_level():
 	if get_tree():
 		get_tree().reload_current_scene()
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
+	# Add the gravity.'
 	DISPLAYSTAMINA = FAKESTAMINA - 1.006
 	get_parent().get_parent().get_parent().get_node("GUI/Base/Stamina").scale = Vector2(DISPLAYSTAMINA, 1)
 	if Input.is_action_pressed("shift") and Input.is_action_pressed("AD"):
@@ -29,6 +30,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY - JUMP_REDUCE
 		JUMP_REDUCE = JUMP_REDUCE - 120.0
+		get_node("/root/World/W1/PLAYER/Health").dmg50()
 	if Input.is_action_pressed("W") and is_on_floor():
 		velocity.y = JUMP_VELOCITY - JUMP_REDUCE
 		JUMP_REDUCE = JUMP_REDUCE - 120.0
