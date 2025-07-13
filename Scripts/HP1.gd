@@ -54,7 +54,6 @@ func dmg80() -> void:
 	Health -= 80
 func dmg90() -> void:
 	Health -= 90
-	
 func hp1() -> void:
 	Health += 1
 func hp2() -> void:
