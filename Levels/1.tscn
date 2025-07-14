@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://ohtuhptramoj"]
+[gd_scene load_steps=22 format=4 uid="uid://ohtuhptramoj"]
 
 [ext_resource type="Script" uid="uid://dvy8gmugxqj66" path="res://Scripts/player.gd" id="1_a3mg4"]
 [ext_resource type="Script" uid="uid://3nfebcqlm6tf" path="res://Scripts/Gravity.gd" id="3_ghh0o"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://djpp4k2n583hv" path="res://PNG/esc.png" id="12_vir0h"]
 [ext_resource type="Script" uid="uid://c8k8siwauvlvn" path="res://Scripts/restart.gd" id="13_ghh0o"]
 [ext_resource type="Script" uid="uid://ba0juqqbtlh1h" path="res://Scripts/quit.gd" id="13_mpo1i"]
+[ext_resource type="Script" uid="uid://yal35p4enkav" path="res://Scripts/death.gd" id="17_xu7n4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a3mg4"]
 size = Vector2(64, 64)
@@ -401,6 +402,9 @@ position = Vector2(1, 960)
 position = Vector2(0, 267)
 scale = Vector2(1000, 1)
 shape = SubResource("RectangleShape2D_oiuve")
+
+[node name="death" type="Node2D" parent="."]
+script = ExtResource("17_xu7n4")
 
 [connection signal="pressed" from="GUI/Base/Button" to="GUI" method="_on_button_pressed"]
 [connection signal="pressed" from="GUI/ESC/buttons/Home2" to="GUI/ESC" method="_on_button_pressed"]
