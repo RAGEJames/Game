@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 		Health = Health_mult * 100
 		print("heker")
 	if Health <= 0:
-		death()
+		death.death()
 	THealth = Health * 0.1 * 0.1 / Health_mult
 	
 	get_parent().get_parent().get_parent().get_node("GUI/Base/HP1").scale = Vector2(THealth, 1)
