@@ -191,6 +191,7 @@ sources/0 = SubResource("TileSetAtlasSource_oiuve")
 [node name="World" type="Node2D"]
 
 [node name="W1" type="Node2D" parent="."]
+position = Vector2(606, 362)
 
 [node name="PLAYER" type="Node2D" parent="W1"]
 position = Vector2(-28, 158)
