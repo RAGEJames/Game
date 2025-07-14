@@ -15,10 +15,6 @@ run/main_scene="uid://co7soomsngyk"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-Death="*res://death.gd"
-
 [display]
 
 window/size/viewport_width=1920
